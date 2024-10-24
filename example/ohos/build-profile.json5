@@ -1,0 +1,41 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/evdo/.ohos/config/default_ohos_x0nsMNkmbkkR1IGKkuuoJgFMj-gnerrXgBV-uJhouDI=.cer",
+          "storePassword": "0000001B4FEBE9DF53BCBE2464E2B27B9406E99E4680EB9F42DE136F2186065E67976FF4892E19F2B4FE2A",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B5C2180AE7FC8AA999717647151F08D3817F4C36885A744047F075974D2FFE17476FC0DDAD40AA2",
+          "profile": "/Users/evdo/.ohos/config/default_ohos_x0nsMNkmbkkR1IGKkuuoJgFMj-gnerrXgBV-uJhouDI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/evdo/.ohos/config/default_ohos_x0nsMNkmbkkR1IGKkuuoJgFMj-gnerrXgBV-uJhouDI=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
