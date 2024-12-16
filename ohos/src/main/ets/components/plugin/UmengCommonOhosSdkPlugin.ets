@@ -44,7 +44,7 @@ export default class UmengCommonOhosSdkPlugin implements FlutterPlugin, MethodCa
     if (call.method == "getPlatformVersion") {
       result.success("OpenHarmony ^ ^ ")
     }else if(call.method == "preInit"){
-      setLogEnabled(true);
+      // setLogEnabled(true);
       preInit({
         context: this.context!.getApplicationContext(),
         plugins: [new InternalPlugin()]
